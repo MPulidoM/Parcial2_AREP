@@ -1,5 +1,25 @@
 # Parcial2_AREP
 
+- La factorización de números enteros es un problema complejo para el cual no se conocen algoritmos clásicos eficientes. La criptografía clásica está soportada en la dificultad para encontrar los factores primos de números grandes.
+Diseñe, construya y despliegue un aplicación web para investigar los factores de números enteros y los números primos. El programa debe estar desplegado en tres máquinas virtuales de EC2 de AWS como se describe abajo. Las tecnologías usadas en la solución deben ser maven, git, github, sparkjava, html5, y js. No use liberías adicionales.
+
+- PROBLEMA:
+Diseñe un prototipo de sistema de microservicios que tenga un servicio servicio de las funciones numéricas
+
+
+FACTORES:
+- 1 es un factor de todos los números
+- De ahí en adelante simplemente mirando el módulo puede verificar si es o no factor.
+- Puede mirar todos los numeros hasta n/2
+- n pertenece también a los factores.
+
+
+PRIMOS: 
+- 1 es un número primo
+- De ahí en adelante recuerde que un número es primo si solo es divisible por 1 y por si mismo.
+- Es decir un número es primo si el tamaño del conjunto de factores es 2.
+
+
 Autor: Mariana Pulido Moreno 
 
 # CORRERLO DE MANERA lOCAL
