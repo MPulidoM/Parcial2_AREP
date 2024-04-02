@@ -26,7 +26,26 @@ Y damos el siguiente comando para ver el funcionamiento(; Windows - : Linux)
 
 Se debe entrar al siguiente link
 
+Para ver el funcionamiento de **Factores**
+```
+http://localhost:4567/factors?value="Numero entero positivo"
+```
 Para ver el funcionamiento de **Primos**
 ```
-
+http://localhost:4567/primes?value="Numero entero positivo"
 ```
+
+# FUNCIONAMIENTO
+
+FACTORES
+
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/c4ee943f-f978-46ae-8c91-4b7d4b86e115)
+
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/0ca3c91b-f556-4cec-b567-ab230a950d5c)
+
+PRIMOS
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/977967a9-99b0-455c-b493-ea40e30b5464)
+
+
+
+
