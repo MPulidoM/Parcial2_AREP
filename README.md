@@ -66,28 +66,98 @@ http://localhost:4567/primes?value="Numero entero positivo"
 
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/0ca3c91b-f556-4cec-b567-ab230a950d5c)
 
-PRIMOS
+**PRIMOS**
+
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/977967a9-99b0-455c-b493-ea40e30b5464)
 
 
+## AWS
 
-**AWS**
-
+- Se ven las instancias en ejecución
+  
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/5c5a46bd-a6dd-4825-9777-d1a836a7947a)
+
+--> Conexión con la Instancia:
+
+  ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/2ec4ba5e-fc6b-44ff-864e-210855949117)
+  ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/314770b3-0b96-4d5b-8afb-9edc9534ece4)
+  ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/0ff68728-27c2-4542-8b9f-14ea37bd8c05)
+
+- Se dan los siguientes comandos después de haber conectado con la máquina, esto lo realizamos desde la página de AWS:
+
+  Instalar lo necesario para correr el Repositorio:
+
+  ```
+    sudo yum install java
+  ```
+  
+  ```
+    sudo yum install maven
+  ```
+  ```
+    sudo yum install git
+  ```
+  
+ Con lo anterior ya instalado hacemos lo siguiente:
+ 
+ Debemos clonar el repositorio:
+   ```
+   git clone https://github.com/MPulidoM/Parcial2_AREP.git
+   ```
+ Se accede al directorio del proyecto:
+   ```
+   cd Parcial2_AREP
+   ```
+ Damos el siguiente comando de Maven:
+   ```
+   mvn clean install
+   ```
+Se corre la clase de MathServer (; Windows - : Linux)
+  ```
+   java -cp "target/classes:target/dependency/*" edu.eci.arep.MathServer
+  ```
+**Pruebas - AWS**
+
+Se ve corrien do en ambas instancias el repositorio clonado:
 
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/66198177-a7d6-4fde-91f3-584aecb9c4f0)
 
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/db7e234e-4a05-4371-b368-977398359638)
 
+
+**FACTORES**
+
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/c6a41477-1a84-4a7f-8f9c-ad705c2d98a5)
 
+**PRIMOS**
 
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/44761ba9-12c3-4fe6-9dc2-10dab8ce6bcb)
 
+**Despliegue AWS**
+
+En las pruebas realizadas se tuvieron los siguientes links , en los valores dados son los usados en los ejemplos:
+
+-   miprimerservidor:
+```
+ http://ec2-3-84-246-196.compute-1.amazonaws.com:4567/factors?value=112
+```
+- Instancia2:
+```
+http://ec2-52-90-30-179.compute-1.amazonaws.com:4567/primes?value=100
+```
+  [VIDEO DESPLIEGUE AWS](https://www.youtube.com/watch?v=GtwvFoHSRJQ)
 
 
+## Autores
 
+* **Mariana Pulido Moreno** - *Arep 101* - [MPulidoM](https://github.com/MPulidoM)
 
+## Construido con
+
+* [Maven](https://maven.apache.org/) - Gestión de dependencias
+* [Java](https://www.java.com/es/) - Lenguaje Utilizado
+* [GitHub](https://git-scm.com/) - Control de Versiones
+* [AWS](https://awsacademy.instructure.com/courses/58453/modules/items/5197637) - Despliegue
 
 
 
