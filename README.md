@@ -57,7 +57,7 @@ http://localhost:4567/primes?value="Numero entero positivo"
 
 # FUNCIONAMIENTO
 
-FACTORES
+**FACTORES**
 
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/c4ee943f-f978-46ae-8c91-4b7d4b86e115)
 
@@ -68,7 +68,23 @@ PRIMOS
 
 
 
-AWS
+**AWS**
+
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/5c5a46bd-a6dd-4825-9777-d1a836a7947a)
+
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/66198177-a7d6-4fde-91f3-584aecb9c4f0)
+
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/db7e234e-4a05-4371-b368-977398359638)
+
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/c6a41477-1a84-4a7f-8f9c-ad705c2d98a5)
+
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/44761ba9-12c3-4fe6-9dc2-10dab8ce6bcb)
+
+
+
+
+
+
 
 
 
