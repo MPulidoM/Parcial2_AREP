@@ -118,7 +118,7 @@ Se corre la clase de MathServer (; Windows - : Linux)
   ```
 **Pruebas - AWS**
 
-Se ve corrien do en ambas instancias el repositorio clonado:
+Se ve corriendo en ambas instancias el repositorio clonado:
 
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/66198177-a7d6-4fde-91f3-584aecb9c4f0)
 
