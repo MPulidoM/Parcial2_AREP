@@ -152,7 +152,7 @@ http://ec2-52-90-30-179.compute-1.amazonaws.com:4567/primes?value=100
 ```
  http://ec2-54-208-25-106.compute-1.amazonaws.com:4567/factors?value=15
 ```
-  [VIDEO DESPLIEGUE AWS](https://www.youtube.com/watch?v=GtwvFoHSRJQ)
+  [VIDEO DESPLIEGUE AWS](https://www.youtube.com/watch?v=wNHJC59HPPU)
 
 
 ## Autores
