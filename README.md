@@ -1,50 +1,53 @@
-# Parcial2_AREP
+# PARCIAL PRACTICO 2 TERCIO
 
-- La factorización de números enteros es un problema complejo para el cual no se conocen algoritmos clásicos eficientes. La criptografía clásica está soportada en la dificultad para encontrar los factores primos de números grandes.
-Diseñe, construya y despliegue un aplicación web para investigar los factores de números enteros y los números primos. El programa debe estar desplegado en tres máquinas virtuales de EC2 de AWS como se describe abajo. Las tecnologías usadas en la solución deben ser maven, git, github, sparkjava, html5, y js. No use liberías adicionales.
+Este parcial presenta un prototipo de sistema de microservicios diseñado para abordar funciones numéricas clave: la factorización de números enteros y la identificación de números primos. La factorización de números enteros, un problema computacionalmente complejo sin algoritmos clásicos eficientes conocidos, es esencial en la criptografía clásica, ya que la seguridad de muchos algoritmos se basa en la dificultad de factorizar números grandes. Utilizando tecnologías como Maven para la gestión de dependencias, Git y GitHub para el control de versiones y colaboración, SparkJava para la construcción de aplicaciones web rápidas y escalables, junto con HTML5 y JavaScript para la interfaz de usuario, este sistema proporciona una plataforma para investigar y comprender la descomposición de números enteros en sus factores primos, así como para determinar si un número dado es primo, aspecto crucial en la teoría de números y aplicaciones de seguridad informática. El despliegue en tres máquinas virtuales de EC2 de AWS garantiza la disponibilidad y escalabilidad del sistema, permitiendo que múltiples usuarios accedan a estas funcionalidades numéricas esenciales.
 
-- PROBLEMA:
-Diseñe un prototipo de sistema de microservicios que tenga un servicio servicio de las funciones numéricas
+## Empezando
+
+El proyecto contiene las siguientes clases:
+- [Factors](https://github.com/MPulidoM/Parcial2_AREP/blob/main/src/main/java/edu/eci/arep/Factors.java) Que realiza las operaciones de acuerdo a sacar los factores, teniendo en cuenta que Todos los números tienen 1 como factor, además, para verificar si un número es factor de otro basta con comprobar su módulo y examinar los números hasta n/2, incluyendo al propio n.
+-  [Primes](https://github.com/MPulidoM/Parcial2_AREP/blob/main/src/main/java/edu/eci/arep/Primes.java) Que realiza las operaciones de acuerdo a sacar los primos, teniendo en cuenta que un número es primo si únicamente es divisible por 1 y por sí mismo, lo que implica que su conjunto de factores tiene un tamaño de 2.
+-  [MathServer](https://github.com/MPulidoM/Parcial2_AREP/blob/main/src/main/java/edu/eci/arep/MathServer.java) Implementa un servidor web utilizando SparkJava que responde a solicitudes GET para calcular los factores y números primos de un número entero dado.
+
+## Requisitos previos
+
+[Maven](https://maven.apache.org/) : Con esta herramienta se creo la estructura del proyecto y se manejan las dependencias que se necesitan
+
+[Git](https://git-scm.com/) : Se basa en un sistema de control de versiones distribuido, donde cada desarrollador tiene una copia completa del historial del proyecto.
+
+Para asegurar una correcta instalación de Maven, es crucial confirmar que la versión del JDK de Java sea compatible. Si el JDK no está actualizado, la instalación de las versiones actuales de Maven podría fallar, generando problemas durante el uso de la herramienta.
+```
+java -version 
+```
+
+## Arquitectura
+Este proyecto consta de tres clases, Factors, Primes y MathServer, que trabajan juntas para proporcionar una API para calcular los factores y números primos de un entero determinado. La clase MathServer es el punto de entrada de la aplicación y configura los puntos finales de la API utilizando el marco Spark. Incluye dos rutas principales: una para calcular los factores y otra para calcular los números primos. La clase Factors es responsable de calcular los factores de un número entero dado, y la clase Primes calcula los números primos hasta un número entero dado. El método MakeFactors de la clase Factors devuelve una ArrayList de factores, mientras que el método MakePrimes de la clase Primes devuelve una ArrayList de números primos. La clase MathServer utiliza estos métodos para devolver respuestas JSON para los puntos finales de la API.
 
 
-FACTORES:
-- 1 es un factor de todos los números
-- De ahí en adelante simplemente mirando el módulo puede verificar si es o no factor.
-- Puede mirar todos los numeros hasta n/2
-- n pertenece también a los factores.
 
+## Instalando
 
-PRIMOS: 
-- 1 es un número primo
-- De ahí en adelante recuerde que un número es primo si solo es divisible por 1 y por si mismo.
-- Es decir un número es primo si el tamaño del conjunto de factores es 2.
-
-
-Autor: Mariana Pulido Moreno 
-
-# CORRERLO DE MANERA lOCAL
-
-Clonamos el Repositorio
+Debemos clonar el repositorio:
 ```
 git clone https://github.com/MPulidoM/Parcial2_AREP.git
 ```
-Nos dirigimos al directorio del Proyecto
+Se accede al directorio del proyecto:
 ```
 cd Parcial2_AREP
 ```
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/a612a531-d6ef-490f-9869-a2e17878255e)
 
-Ahora damos el siguiente comando de Maven 
+Damos el siguiente comando de Maven:
 ```
 mvn clean install
 ```
-Y damos el siguiente comando para ver el funcionamiento(; Windows - : Linux)
+Se corre la clase de MathServer (; Windows - : Linux)
 ```
  java -cp "target/classes;target/dependency/*" edu.eci.arep.MathServer
 ```
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/cf827730-de73-4c1f-8dfb-423bbcd7acb6)
 
-Se debe entrar al siguiente link
+Después debemos entrar a las siguientes rutas:
 
 Para ver el funcionamiento de **Factores**
 ```
@@ -55,7 +58,7 @@ Para ver el funcionamiento de **Primos**
 http://localhost:4567/primes?value="Numero entero positivo"
 ```
 
-# FUNCIONAMIENTO
+## Pruebas - Local
 
 **FACTORES**
 
