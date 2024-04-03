@@ -125,6 +125,8 @@ Se ve corriendo en las instancias el repositorio clonado:
 
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/db7e234e-4a05-4371-b368-977398359638)
 
+![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/aff8c99d-f943-4c39-9a78-fdc0822fe28f)
+
 
 **FACTORES**
 
@@ -145,6 +147,10 @@ En las pruebas realizadas se tuvieron los siguientes links , en los valores dado
 - Instancia2:
 ```
 http://ec2-52-90-30-179.compute-1.amazonaws.com:4567/primes?value=100
+```
+- Instancia3:
+```
+ http://ec2-54-208-25-106.compute-1.amazonaws.com:4567/factors?value=15
 ```
   [VIDEO DESPLIEGUE AWS](https://www.youtube.com/watch?v=GtwvFoHSRJQ)
 
