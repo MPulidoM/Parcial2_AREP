@@ -78,6 +78,7 @@ PRIMOS
 
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/c6a41477-1a84-4a7f-8f9c-ad705c2d98a5)
 
+
 ![image](https://github.com/MPulidoM/Parcial2_AREP/assets/118181543/44761ba9-12c3-4fe6-9dc2-10dab8ce6bcb)
 
 
